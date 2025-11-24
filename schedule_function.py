@@ -13,5 +13,5 @@ def schedule_function():
 
 
 while True:
-    schedule.run.pending()
+    schedule.run_pending()
     time.sleep(1)
