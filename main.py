@@ -1,16 +1,12 @@
-# main.py
-# MVC pattern: Model-View-Controller
-# Main python controller for the project
-
 # Imported modules
-import performance_function
-# import schedule_function
+import http_health_check
+import scheduler
 
 
 def main():
-    performance_function.performance_function()
-    # schedule_function.schedule_function()
+    http_health_check.check_http_health()
+    scheduler.schedule_health_checks()
 
-
+    
 if __name__ == "__main__":
     main()
